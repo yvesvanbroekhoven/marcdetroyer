@@ -1,0 +1,5 @@
+.class { width:200px; /* All browsers */
+	       *width:250px; /* IE */
+	       _width:300px; /* IE6 */
+	       .width:200px; /* IE7 */
+}
