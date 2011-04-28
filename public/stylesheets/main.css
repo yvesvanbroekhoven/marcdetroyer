@@ -1,20 +1,20 @@
 body { font-family: Georgia; line-height: 16px; font-size: 13px;  }
-.wrapper { position: relative; margin: 80px auto; width: 915px;   }
+.wrapper { position: relative; margin: 80px auto; width: 900px;   }
 
 /* colornav
 	 ------------------------------------------------------------------------------------------------------------------------------ */
-	#colornav { position:absolute; right: 0px; top: -55px;  }
+	#colornav { position:absolute; right: 26px; top: -55px;  }
 	#colornav li a { width: 10px; height: 10px; display: block; text-indent: -9988px; position: absolute; top: 0px; left: 0px;  }
 	#colornav li span { position: absolute; top: 0px; right: -10px; font-style: italic; font-size: 11px; width: 161px; padding: 5px; cursor: pointer; }
 
 	.black  { background: #3a3a3a; }
- .white #header { background: #ffffff; }
+	.white #header { background: #ffffff; }
 
 
 
 /* header
 	 ------------------------------------------------------------------------------------------------------------------------------ */
-		#header { padding: 0px 0px 50px 0px }
+	  #header { padding: 0px 18px 80px 0px }
   
   /* header h1 ----------------------------------------------------------------------------------------------------------------- */
 	 #header h1 { font-family: 'GeosansLightRegular'; font-size: 20px; padding: 0px 0px 20px 0px; float: left; }
@@ -31,15 +31,15 @@ body { font-family: Georgia; line-height: 16px; font-size: 13px;  }
 	 .white  h1 { color: #2d2d2d; }
 	 .white  h1  a { color: #2d2d2d; }
 	 .white  #menu li a { color: #2d2d2d; font-weight: bold; }
-		.white  #colornav li a {  background: #2d2d2d; }
-		.white  #colornav li span { background: #2d2d2d; color: #ffffff;   }
+	 .white  #colornav li a {  background: #2d2d2d; }
+	 .white  #colornav li span { background: #2d2d2d; color: #ffffff;   }
 
   /* header menu -------------------------------------------------------------------------------------------------------------- */
 	 #header #menu { float: right; }
 	 #header #menu li { float: left; margin: 0px 0px 0px 10px; font-size: 13px; }
 	 #header #menu li a { font-family: 'GeosansLightRegular';  text-decoration: none;  text-transform: uppercase; }
-		#header #menu li a:hover { text-decoration: underline; }
-		#header #menu li a.active { text-decoration: underline; }
+	 #header #menu li a:hover { text-decoration: underline; }
+	 #header #menu li a.active { text-decoration: underline; }
 
 
 /* content 
@@ -47,12 +47,36 @@ body { font-family: Georgia; line-height: 16px; font-size: 13px;  }
  	 
  	 #content { clear: both; }
  	 
- 	 /* header thumbs & main-image ------------------------------------------------------------------------------------------------ */
- 	 #content #thumbs li { float: left; margin: 0px 5px 0px 0px; position: relative; }
- 	 #content #thumbs li.last { float: left; margin: 0px 0px 0px 0px }
- 		#content #thumbs li span { width: 100px; height: 0px; background: #000000; top: 0px; left: 0px; position: absolute; color: #ffffff; font-style: italic;  text-align: center; background:    url(img/gradient.png) repeat; cursor: pointer; padding: 0px 5px; }
- 	 #content #thumbs li span h2 { padding: 15px 0px; color: #ffffff; font-size: 14px; font-style: italic; }
- 	 #content #main-image {  text-align: center; padding: 0px 0px 20px 0px; height: 522px; }
+ 	 /* header main-image --------------------------------------------------------------------------------------------------------- */
+ 	
+ 	 	 #content #images  {    position:absolute; top: 310px;   }
+ 	 	 #content #images  ul { width: 900px; height: 1014px;  }
+ 	 	 
+ 	 	  	 	 #content #images  ul li {  width: 900px;  }
+
+
+
+
+ 	.hidden { display: none; }
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	#thumbs { position: absolute; }
+ 	
+ 	
+ 	
+ 	
+ 	 #content #thumbs li { float: left; margin: 0px 12px 5px 0px; position: relative; }
+ 	 #content #thumbs li.last { float: left; margin: 0px 0px 0px 0px;   }
+ 	 
+ 		/*#content #thumbs li span { width: 100px; height: 100px;  top: -100px; left: 0px;  background:    url(img/gradient.png) repeat;  position: relative; display: block;  }*/
+ 	 
+ 	 
+ 	  	 #content #thumbs li a { display: block; height: 100px; width: 100px;   position: relative; }
+ 	  	 #content #thumbs .active img { opacity: 0.2;  }
+
 
 
 h2  {  font-family: 'GeosansLightRegular'; color: #2d2d2d; font-size: 22px; padding: 0px 0px 20px 0px; }
@@ -63,6 +87,8 @@ form { width: 400px; padding: 0px 0px 20px 80px; float: left; }
 form h2 { padding: 0px 0px 25px 0px; }
 
 form  p { padding: 0px 0px 10px 0px; clear: both;  }
+
+#affiche { background: #ffffff; text-align: center; margin: 20px 0px 0px;}
 
 #about-content { background: #ffffff; padding: 25px 15px; }
 #about-content p { line-height: 18px; font-size: 12px; font-style: italic; color: #2d2d2d; font-family: Georgia, "Times New Roman", Times, serif;  }

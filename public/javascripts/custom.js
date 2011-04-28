@@ -1,7 +1,27 @@
 $(document).ready(function(){
 
 
+
+ $('#thumbs a').click(function() {
+	$(".main-image").hide();
+	
+	  var pictures = $(this).attr('rel');
+     $(pictures).show();
+     
+    
+     $('#thumbs a').addClass("active");
+     $(this).removeClass("active");
+        
+        
+ });
+ 
+
+
+    $('#thumbs li').children('span').removeClass("active");
+
+
   $("#menu li a").click(function() {
+       
        $('#menu li a').removeClass("active");
         $(this).addClass("active");
         
@@ -9,7 +29,7 @@ $(document).ready(function(){
 
 
         var navitem = $(this).attr('rel');
-        $(navitem).show();
+        $(navitem).show().removeClass("hidden");
         // return false;
     });
 
@@ -50,23 +70,10 @@ $("#colornav .bg-black").click(function() {
          
 
  });
-
-
-$("#thumbs li span h2").hide();
-
-
-$('#thumbs li').mouseenter(function() {
-
-	$(this).children("span").animate({height: '150'}, 500 );
-	$(this).children().children("h2").show();
-});
-
-$('#thumbs li').mouseleave(function() {
-
-	$(this).children("span").animate({height: '0'}, 500 );
-$(this).children().children("h2").hide();
-
-});
+ 
+ 
+ 	$(".main-image").hide();
+ 
 
 $('.slideshow').cycle({ 
     fx:      'scrollDown', 
