@@ -21,7 +21,8 @@
   <script type="text/javascript" src="http://malsup.github.com/chili-1.7.pack.js"></script>
   <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.72.js"></script>
   <script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.1.1.js"></script>
-  <script src="/javascripts/custom.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascripts/customs.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascripts/contact-form.js" type="text/javascript" charset="utf-8"></script>
 
   <!--[if IE 6]>
     <script src="/javascripts/pngfix.js" type="text/javascript"></script>
@@ -62,7 +63,7 @@
       </ul>    
     </div><!-- / header -->
 
-    <div id="content">
+    <div id="content" class="item hidden">
       <?php $this->load->view($yield); ?>
     </div>
     

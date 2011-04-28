@@ -1,4 +1,5 @@
-<div id="contact" class="item ">
+<? $this->load->helper('form'); ?>
+<div id="contact" class="item">
   <div id="about-content">
     <div class="left">
       <h2>Contact me</h2>
@@ -7,10 +8,12 @@
       <img src="/stylesheets/img/por.png" alt="por" id="portret" width="160" height="167" />
     </div>
     
-    <? $this->load->helper('form'); ?>
     <form action="/contact/send" class="clearfix" method="post">
       <h2>Send me a message</h2>
-      <p><?= validation_errors(); ?></p>
+      <div><?= validation_errors(); ?></div>
+      <? if (isset($notice)) : ?>
+        <p class="success"><?= $notice ?></p>
+      <? endif ?>
       <p>
         <label for="">Name:</label>
         <?= form_input(array("name" => "contact[name]", "type" => "text")); ?>

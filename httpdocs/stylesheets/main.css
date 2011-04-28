@@ -1,0 +1,126 @@
+body { font-family: Georgia; line-height: 16px; font-size: 13px;  }
+.wrapper { position: relative; margin: 80px auto; width: 900px;   }
+
+/* colornav
+	 ------------------------------------------------------------------------------------------------------------------------------ */
+	#colornav { position:absolute; right: 26px; top: -55px;  }
+	#colornav li a { width: 10px; height: 10px; display: block; text-indent: -9988px; position: absolute; top: 0px; left: 0px;  }
+	#colornav li span { position: absolute; top: 0px; right: -10px; font-style: italic; font-size: 11px; width: 161px; padding: 5px; cursor: pointer; }
+
+	.black  { background: #3a3a3a; }
+	.white #header { background: #ffffff; }
+
+
+
+/* header
+	 ------------------------------------------------------------------------------------------------------------------------------ */
+	  #header { padding: 0px 18px 80px 0px }
+  
+  /* header h1 ----------------------------------------------------------------------------------------------------------------- */
+	 #header h1 { font-family: 'GeosansLightRegular'; font-size: 20px; padding: 0px 0px 20px 0px; float: left; }
+	 #header h1 a { font-size: 25px;  text-decoration: none; text-transform: uppercase; padding: 0px 7px 0px 0px; }
+
+  /* header black -------------------------------------------------------------------------------------------------------------- */
+	 .black  h1  { color: #ffffff; }
+	 .black  h1  a { color: #ffffff; }
+	 .black  #header #menu li a { color: #ffffff; }
+	 .black  #colornav li a {  background: #ffffff; }
+	 .black   #colornav li span { background: #ffffff; color: #2d2d2d; }
+
+  /* header white -------------------------------------------------------------------------------------------------------------- */
+	 .white  h1 { color: #2d2d2d; }
+	 .white  h1  a { color: #2d2d2d; }
+	 .white  #menu li a { color: #2d2d2d; font-weight: bold; }
+	 .white  #colornav li a {  background: #2d2d2d; }
+	 .white  #colornav li span { background: #2d2d2d; color: #ffffff;   }
+
+  /* header menu -------------------------------------------------------------------------------------------------------------- */
+	 #header #menu { float: right; }
+	 #header #menu li { float: left; margin: 0px 0px 0px 10px; font-size: 13px; }
+	 #header #menu li a { font-family: 'GeosansLightRegular';  text-decoration: none;  text-transform: uppercase; }
+	 #header #menu li a:hover { text-decoration: underline; }
+	 #header #menu li a.active { text-decoration: underline; }
+
+
+/* content 
+ 	 ------------------------------------------------------------------------------------------------------------------------------ */
+ 	 
+ 	 #content { clear: both; }
+ 	 
+ 	 /* header main-image --------------------------------------------------------------------------------------------------------- */
+ 	
+ 	 	 #content #images  {    position:absolute; top: 310px;   }
+ 	 	 #content #images  ul { width: 900px; height: 1014px;  }
+ 	 	 
+ 	 	  	 	 #content #images  ul li {  width: 900px;  }
+
+
+
+
+ 	.hidden { display: none; }
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	#thumbs { position: absolute; }
+ 	
+ 	
+ 	
+ 	
+ 	 #content #thumbs li { float: left; margin: 0px 12px 5px 0px; position: relative; }
+ 	 #content #thumbs li.last { float: left; margin: 0px 0px 0px 0px;   }
+ 	 
+ 		/*#content #thumbs li span { width: 100px; height: 100px;  top: -100px; left: 0px;  background:    url(img/gradient.png) repeat;  position: relative; display: block;  }*/
+ 	 
+ 	 
+ 	  	 #content #thumbs li a { display: block; height: 100px; width: 100px;   position: relative; }
+ 	  	 #content #thumbs .active img { opacity: 0.2;  }
+
+
+
+h2  {  font-family: 'GeosansLightRegular'; color: #2d2d2d; font-size: 22px; padding: 0px 0px 20px 0px; }
+
+#portret { margin: 15px 0px; }
+
+form { width: 400px; padding: 0px 0px 20px 80px; float: left; }
+form h2 { padding: 0px 0px 25px 0px; }
+
+form  p { padding: 0px 0px 10px 0px; clear: both;  }
+
+#affiche { background: #ffffff; text-align: center; margin: 20px 0px 0px;}
+
+#about-content { background: #ffffff; padding: 25px 15px; }
+#about-content p { line-height: 18px; font-size: 12px; font-style: italic; color: #2d2d2d; font-family: Georgia, "Times New Roman", Times, serif;  }
+#about-content a { line-height: 18px; font-size: 12px; font-style: italic; color: #2d2d2d; font-family: Georgia, "Times New Roman", Times, serif;   }
+
+#about-content input { border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; margin: 0px 0px 0px 20px; float: right; width: 247px;  font-size: 12px; font-style: italic; color: #2d2d2d; font-family: Georgia, "Times New Roman", Times, serif; padding: 0px 0px 0px 3px;  }
+#about-content textarea { border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4;  width: 390px; margin: 10px 0px 0px; padding: 5px; height: 250px;  line-height: 18px; font-size: 12px; font-style: italic; color: #2d2d2d; font-family: Georgia, "Times New Roman", Times, serif;  }
+
+#submit { background: #ffffff; border: none !important; padding: 0px !important; margin: 0px !important; width: 30px  !important; cursor: pointer; }
+
+/* Font face
+ 	 ------------------------------------------------------------------------------------------------------------------------------ */
+	@font-face {
+	    font-family: 'GeosansLightRegular';
+	    src: url('fonts/geosanslight-webfont.eot');
+	    src: url('fonts/geosanslight-webfont.eot?iefix') format('eot'),
+	         url('fonts/geosanslight-webfont.woff') format('woff'),
+	         url('fonts/geosanslight-webfont.ttf') format('truetype'),
+	         url('fonts/geosanslight-webfont.svg#webfontpTbgYUwW') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	@font-face {
+	    font-family: 'GeosansLightMediumItalic';
+	    src: url('fonts/geosanslight-oblique-webfont.eot');
+	    src: url('fonts/geosanslight-oblique-webfont.eot?iefix') format('eot'),
+	         url('fonts/geosanslight-oblique-webfont.woff') format('woff'),
+	         url('fonts/geosanslight-oblique-webfont.ttf') format('truetype'),
+	         url('fonts/geosanslight-oblique-webfont.svg#webfontk5Gv3ATm') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}

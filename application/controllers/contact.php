@@ -29,15 +29,16 @@ class Contact extends CI_Controller {
       $this->email->from($email, $name);
       $this->email->to('yvesvanbroekhoven@gmail.com');
 
-      $this->email->subject('Iemand stuurde je een bericht via het contact formulier');
+      $this->email->subject($name . ' stuurde je een bericht via het contact formulier');
       $this->email->message($question);
 
       $this->email->send();
 
-      echo $this->email->print_debugger();
+      //$this->email->print_debugger();
       
       // Load view
-      $data['yield'] = 'photos/index';
+      $data['notice'] = "Thank you for your message. I will answer you as soon as possible.";
+      $data['yield']  = 'photos/index';
       $this->load->view('layouts/application', $data);
       
     }
